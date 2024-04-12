@@ -88,9 +88,27 @@ body {
     cursor: pointer;
 }
 
-.shopping-cart {
-    display: inline-block;
-    font-size: 30px;
+.shopping-cart img {
+    width: 30px;
+    height: auto;
+}
+
+.hero {
+    background-image: url('./games-images/unsplash.jpg'); /*Maybe replace image here with a bunch of video games if we want hero?*/
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0aa9f3;
+    font-size: 2rem;
 }
 
 /* MODAL CSS */
@@ -156,10 +174,4 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     animation-name: animatetop;
     animation-duration: 0.4s
-  }
-
-  /* Add Animation */
-  @keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
   }
