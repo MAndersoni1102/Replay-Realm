@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Replay Realm</title>
     <link rel="stylesheet" href="./assets/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
+<body>   
     <nav class="navbar">
         <div class="navbar-container">
             <div class="logo">
@@ -37,9 +37,28 @@
                 <button type="submit">Search</button>
             </div>
             <div class="shopping-cart">
-                <a href="#" target="_blank"><i class='bx bx-cart'></i></a>
+                <a id="myBtn" href="#"><i class='bx bx-cart'></i></a>
             </div>
+            <!-- CHECKOUT MODAL -->
+            <div id="myModal" class="modal">
+                <!-- MODAL CONTENT -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">&times;</span>
+                      <h2>Shopping Cart:</h2>
+                    </div>
+                    <div class="modal-body">
+                      <p>Here is a list of items in your cart:</p>
+                      <p>Leaving So Soon?</p>
+                    </div>
+                    <div class="modal-footer">
+                      <h3>Thank You For Shopping!</h3>
+                    </div>
+                  </div>
+            </div>
+            <!-- END MODAL -->
         </div>
     </nav>
+    <script src="/assets/script.js"></script>
 </body>
 </html>
