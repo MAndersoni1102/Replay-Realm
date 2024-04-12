@@ -19,7 +19,6 @@ window.onclick = function(event) {
   }
 }
 // MODAL ENDS
-=======
  // This is the TaxData API fetch request
  var myHeaders = new Headers();
  myHeaders.append("apikey", "fhn70i9DnfuXlXusBv2j1N2TjSIOcKyM");
