@@ -19,3 +19,20 @@ window.onclick = function(event) {
   }
 }
 // MODAL ENDS
+=======
+ // This is the TaxData API fetch request
+ var myHeaders = new Headers();
+ myHeaders.append("apikey", "fhn70i9DnfuXlXusBv2j1N2TjSIOcKyM");
+ 
+ var requestOptions = {
+   method: 'GET',
+   redirect: 'follow',
+   headers: myHeaders
+ };
+ 
+ fetch("https://api.apilayer.com/tax_data/canada_rate_list", requestOptions)
+   .then(response => response.text())
+   .then(result => console.log(result))
+   .catch(error => console.log('error', error));
+ 
+ //This is the section that adds the tax rate to the calculated total in the cart
