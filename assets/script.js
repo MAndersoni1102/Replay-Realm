@@ -54,10 +54,33 @@ window.onclick = function(event) {
 // Modal End
 //Fake Store API
 
+fetch('https://api.escuelajs.co/api/v1/products') 
+  .then(res => res.json())
+  .then(json => {
+    // DataTransfer.array.forEach(products => {
+    //   const image = `<li>${products.name}</li>`;
+
+    //   document.querySelector('ul').insertAdjacentHTML()
+    // });
+    const startingId = 22;
+    const numberOfItems = 6;
+    for (let i = startingId; i < startingId + numberOfItems; i++) {
+      const product = json.find(item => item.id === i);
+      if (product) {
+        console.log(product);
+      }
+    }
+  });
+  
+  
+
+
+
+
  //This is the section that adds the tax rate to the calculated total in the cart
-   fetch('https://api.escuelajs.co/api/v1/products/?categoryId=2')
-   .then(res=>res.json())
-   .then(json=>console.log(json))
+  //  fetch('https://api.escuelajs.co/api/v1/products/?categoryId=2')
+  //  .then(res=>res.json())
+  //  .then(json=>console.log(json))
 
 //    .then(res => res.json())
 //  .then(json => {
@@ -65,13 +88,13 @@ window.onclick = function(event) {
 //    const product = json.find(item => item.id === productId);
 //    console.log(product);
 //  });
-function getStoreItem(storeItem) {
+// function getStoreItem(storeItem) {
 
-  for (let index = 0; index < array.length; index++) {
-    const element = array[index];
+//   for (let index = 0; index < array.length; index++) {
+//     const element = array[index];
     
-  }
-}
+//   }
+// }
   
   // const storeItems = function(itemsArray) {
 
