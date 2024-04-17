@@ -54,23 +54,23 @@ window.onclick = function(event) {
 // Modal End
 //Fake Store API
 
-fetch('https://api.escuelajs.co/api/v1/products') 
-  .then(res => res.json())
-  .then(json => {
-    // DataTransfer.array.forEach(products => {
-    //   const image = `<li>${products.name}</li>`;
+// fetch('https://api.escuelajs.co/api/v1/products') 
+//   .then(res => res.json())
+//   .then(json => {
+//     // DataTransfer.array.forEach(products => {
+//     //   const image = `<li>${products.name}</li>`;
 
-    //   document.querySelector('ul').insertAdjacentHTML()
-    // });
-    const startingId = 22;
-    const numberOfItems = 6;
-    for (let i = startingId; i < startingId + numberOfItems; i++) {
-      const product = json.find(item => item.id === i);
-      if (product) {
-        console.log(product);
-      }
-    }
-  });
+//     //   document.querySelector('ul').insertAdjacentHTML()
+//     // });
+//     const startingId = 22;
+//     const numberOfItems = 6;
+//     for (let i = startingId; i < startingId + numberOfItems; i++) {
+//       const product = json.find(item => item.id === i);
+//       if (product) {
+//         console.log(product);
+//       }
+//     }
+//   });
   
   
 

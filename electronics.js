@@ -11,3 +11,9 @@ fetch('https://api.escuelajs.co/api/v1/products')
       }
     }
   });
+
+  function displayStoreItem(event){
+    const name = document.getElementById('panel-heading').textContent = `product ${product.title}`;
+    const picture = document.getElementByClass('img-responsive').textContent = `image ${product.image}`;
+    const about = document.getElementById('panel-heading').textContent = `description ${product.description}`;
+  }
