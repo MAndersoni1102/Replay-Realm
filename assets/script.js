@@ -24,10 +24,12 @@ const jsonData = [
     {"id":128072,"title":"Mythic Heroes Gift Pack Key Giveaway (New Players Only)","keys_left":"83%","thumbnail":"https:\/\/www.mmobomb.com\/file\/2022\/5\/mythic-heroes-box-218x150.png","main_image":"https:\/\/www.mmobomb.com\/file\/2022\/5\/mythic-heroes-box.png","short_description":"To unlock your key instantly you just need to log in and click the button on the top.","giveaway_url":"https:\/\/www.mmobomb.com\/giveaway\/mythic-heroes-keys-new-players"},
     {"id":128110,"title":"Evercore Heroes Beta Key Giveaway","keys_left":"10%","thumbnail":"https:\/\/www.mmobomb.com\/file\/2023\/8\/evercore-heroes-giveaway-218x150.png","main_image":"https:\/\/www.mmobomb.com\/file\/2023\/8\/evercore-heroes-giveaway.png","short_description":"To unlock your key instantly you just need to log in and click the button on the top.","giveaway_url":"https:\/\/www.mmobomb.com\/giveaway\/evercore-heroes-beta-keys"}
 ];
-
-// Extract the giveaway_url of the second item (index 1)
 const specificUrl = jsonData[1].giveaway_url;
 console.log(specificUrl); // Output: https://www.mmobomb.com/giveaway/mobile-royale-keys
+const hyperLink = jsonData[1].giveaway_url; 
+        const giveawayLink = document.getElementById('giveaway-link');
+        giveawayLink.href = specificUrl;
+        giveawayLink.textContent = specificUrl;
 
 // Modal Start
 var modal = document.getElementById('myModal');
