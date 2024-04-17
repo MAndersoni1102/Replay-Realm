@@ -29,11 +29,27 @@ const jsonData = [
 const specificUrl = jsonData[1].giveaway_url;
 console.log(specificUrl); // Output: https://www.mmobomb.com/giveaway/mobile-royale-keys
 
+// Modal Start
+var modal = document.getElementById('myModal');
 
-//const giveawaysResult = giveaways()
-//console.log(giveawaysResult);
-giveaways()
+var btn = document.getElementById("openModalBtn");
 
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+// Modal End
 //Fake Store API
  fetch('https://fakestoreapi.com/products/category/electronics')
  .then(res=>res.json())
