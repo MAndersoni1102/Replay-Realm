@@ -301,6 +301,12 @@ img {
   cursor: pointer;
 }
 
+#contact {
+  display: flex;
+  justify-content: center;
+  color: orangered;
+}
+
 /* Footer */
 
 .footer{
