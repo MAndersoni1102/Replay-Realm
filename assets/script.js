@@ -51,6 +51,31 @@ window.onclick = function(event) {
 }
 // Modal End
 //Fake Store API
- fetch('https://fakestoreapi.com/products/category/electronics')
- .then(res=>res.json())
- .then(json=>console.log(json))
+
+ //This is the section that adds the tax rate to the calculated total in the cart
+   fetch('https://api.escuelajs.co/api/v1/products/?categoryId=2')
+   .then(res=>res.json())
+   .then(json=>console.log(json))
+
+//    .then(res => res.json())
+//  .then(json => {
+//    const productId = 23;
+//    const product = json.find(item => item.id === productId);
+//    console.log(product);
+//  });
+function getStoreItem(storeItem) {
+
+  for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
+  }
+}
+  
+  // const storeItems = function(itemsArray) {
+
+  //   for (let index = 0; index < array.length; index++) {
+  //    const element = array[index];
+  // }
+    
+  // }
+
