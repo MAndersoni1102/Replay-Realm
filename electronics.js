@@ -6,14 +6,20 @@ fetch('https://api.escuelajs.co/api/v1/products')
     const numberOfItems = 6;
     for (let i = startingId; i < startingId + numberOfItems; i++) {
       const product = json.find(item => item.id === i);
+      displayStoreItem(product);
+
       if (product) {
         console.log(product);
       }
     }
   });
 
-  function displayStoreItem(event){
-    const name = document.getElementById('panel-heading').textContent = `product ${product.title}`;
-    const picture = document.getElementByClass('img-responsive').textContent = `image ${product.image}`;
-    const about = document.getElementById('panel-heading').textContent = `description ${product.description}`;
+  function displayStoreItem(product){
+    document.getElementById('panel-heading'+product.id).textContent = product.title+' - $'+product.price;
+
+    description=product.description
+    if(description.length>30){
+      description=description.substring(0,100)+'...'
+    }
+    document.getElementById('panel-footer'+product.id).textContent = description;
   }
