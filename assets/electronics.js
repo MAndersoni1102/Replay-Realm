@@ -35,7 +35,7 @@ function saveProductToLocal(event) {
   };
 
   localStorage.setItem("product", JSON.stringify(product));
-  alert("Product details saved to local storage!");
+  alert("Product has been added to your cart!");
 }
 
 var buttons = document.querySelectorAll(".saveButton");
