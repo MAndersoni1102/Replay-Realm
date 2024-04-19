@@ -16,10 +16,9 @@ https://mandersoni1102.github.io/Replay-Realm/
 Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+```md
+![alt text](assets\Images\Screenshot (14).png)
+```
 
 ## Credits
 
@@ -38,5 +37,4 @@ Two API's listed here:
 
 There are multiple aspects to this webpage such as using of API's, local storage, links to multiple HTML Pages as well as socials in the footer. We hope you enjoy!
 
-## Screentshot 
-assets\Images\Screenshot (14).png
+
